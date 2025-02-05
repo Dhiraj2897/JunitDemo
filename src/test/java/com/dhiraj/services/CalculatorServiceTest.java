@@ -1,9 +1,6 @@
 package com.dhiraj.services;
 
-import org.junit.AfterClass;
-import org.junit.Assert;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.*;
 
 import java.util.Date;
 
@@ -14,6 +11,10 @@ public class CalculatorServiceTest {
     public static void init(){
         System.out.println("before all the testcase:");
         System.out.println("Started test :"+ new Date());
+    }
+    @Before
+    public  void beforeEach(){
+        System.out.println("Before each testcase");
     }
     //test method of addtwo methods
     @Test
