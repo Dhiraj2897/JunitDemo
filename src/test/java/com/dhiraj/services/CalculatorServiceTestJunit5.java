@@ -17,4 +17,13 @@ int actualResult= CalculatorService.sumAnyNumbers(3,4,5,6,1);
 int expectedResult=19;
 Assertions.assertEquals(expectedResult,actualResult,"TC002");
     }
+
+
+    @Test
+    public void divideTwoNumbers(){
+        double actualResult =CalculatorService.divideTwoNumbers(5,2);
+        double expectedResult=3;
+        Assertions.assertEquals(expectedResult,actualResult,"TC003");
+
+    }
 }
